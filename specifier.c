@@ -18,7 +18,7 @@ int print_pointer(va_list args)
 	{
 		for (i = 0; "(nil)"[i] != '\0'; i++)
 		{
-			_putchar("(nil)"[i]);
+			putchar("(nil)"[i]);
 		}
 		return (i);
 	}
@@ -26,7 +26,7 @@ int print_pointer(va_list args)
 	_putchar('0');
 	_putchar('x');
 
-	count = print_hex(num, hex_digits);
+	count = print_hexa(num, hex_digits);
 	return (count + 2);
 }
 
